@@ -11,7 +11,7 @@ namespace ArvForms
         public Bird(string name)
         {
             Name = name;
-            Species = 2;
+            Species = SPECIES.BIRD;
             CanFly = false;
         }
     }

@@ -33,11 +33,13 @@ namespace ArvForms
             {
                 Animal animal = animals[selectedIndex];
                 lbSpecies.Text = animal.Species.ToString();
+                pictureBox1.Image = imageList1.Images[(int)animal.Species];
                 lbCanFly.Text = (animal.CanFly ? "Kan flyga" : "Kan INTE flyga");
             }
             else
             {
                 lbCanFly.Text = "Kan INTE flyga";
+                pictureBox1.Image = null;
             }
         }
     }
